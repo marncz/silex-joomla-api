@@ -18,7 +18,7 @@ require_once 'routes.php';
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-// enable the debug mode
+// Enable the debug mode
 $app['debug'] = true;
 $app->run();
 
