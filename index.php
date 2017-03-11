@@ -1,9 +1,13 @@
 <?php
+// Define Joomla's const
 define('_JEXEC', 1);
 define('JPATH_BASE', '../');
+
+// Include Joomla classes
 require_once JPATH_BASE . 'includes/defines.php';
 require_once JPATH_BASE . 'includes/framework.php';
 
+// Include and start the framework
 require_once 'vendor/autoload.php';
 $app = new Silex\Application();
 
