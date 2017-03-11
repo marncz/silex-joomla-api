@@ -9,7 +9,7 @@ require_once JPATH_BASE . 'includes/framework.php';
 
 // Include and start the framework
 require_once 'vendor/autoload.php';
-$app = new Silex\Application();
+$silex = new Silex\Application();
 
 // Include routes in a separate file
 require_once 'routes.php';
@@ -19,7 +19,5 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 // Enable the debug mode
-$app['debug'] = true;
-$app->run();
-
-?>
+$silex['debug'] = true;
+$silex->run();
