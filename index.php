@@ -11,8 +11,7 @@ require_once JPATH_BASE . 'includes/framework.php';
 require_once 'vendor/autoload.php';
 $app = new Silex\Application();
 
-
-
+// Include routes in a separate file
 require_once 'routes.php';
 
 error_reporting(E_ALL);
