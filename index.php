@@ -14,9 +14,11 @@ $app = new Silex\Application();
 // Include routes in a separate file
 require_once 'routes.php';
 
+// Error handling
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
+// enable the debug mode
 $app['debug'] = true;
 $app->run();
 
